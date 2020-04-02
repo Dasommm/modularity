@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<a href ="pay.jsp">ImportPay Module</a>
+	
+	<p>결제 API 중 하나인 Import는 사이트에서 개인키를 받아서 사용할 수
+	<a href="https://www.iamport.kr/">I'mport 홈페이지</a>
+	<a href="https://www.iamport.kr/getstarted">사용 가이드</a>
+	 </p>
+	
+</body>
+</html>

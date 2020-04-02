@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="summernote">
+
+<insert id="artiInput" parameterType="Dto">
+INSERT INTO SUMMERNOTE
+VALUES(SNSEQ.NEXTVAL, #{title}, #{content}, SYSDATE)
+</insert>
+
+<insert id="imgInput" parameterType="Dto">
+INSERT INTO SUMMERNOTEIMG
+VALUES(IMGSEQ.NEXTVAL, #{filepath}, #{filename}, 'SAVE')
+	<selectKey keyProperty="imgseq" resultType="int" order="AFTER">
+		select imgseq.currval as imgseq from dual
+	</selectKey> 
+
+</insert>
+</mapper>

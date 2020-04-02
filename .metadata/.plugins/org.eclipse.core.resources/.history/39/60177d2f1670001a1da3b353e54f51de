@@ -1,0 +1,51 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <% request.setCharacterEncoding("UTF-8");%>
+<% response.setContentType("text/html; charset=UTF-8");%>    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- summernote 소스 시작 -->
+<!-- include libraries(jQuery, bootstrap) -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- include summernote css/js -->
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.js"></script>
+<!-- summernote 소스 끝 -->
+<!-- 부트 스트랩이 중첩되는 경우에는 에러가 날 수 있음 -->
+
+</head>
+<body>
+
+	
+	<!-- summernote 실행 -->
+<script>
+	$(document).ready(function() {
+		$('#summernote').summernote({	//summernote 실행
+			height :400,	//summernote 사이즈 지정
+			width:700,
+			focus: true,	//실행시 커서
+			
+		});
+		
+	});	
+		
+</script>
+
+<h1>글쓰기</h1>
+<form action="summernote.do?" method="post">
+<input type="hidden" name="command" value="artcleDB">
+<input type="text" name="title">
+<textarea id="summernote" name ="article">Hello Summernote</textarea>
+<input type="submit" value="확인">
+</form>
+
+
+</body>
+</html>

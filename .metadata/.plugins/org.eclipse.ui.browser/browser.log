@@ -1,0 +1,6 @@
+
+4월 01, 2020 16:09:25.22 NEW SESSION
+4월 01, 2020 16:09:25.22 [1056:6036:0401/160925.216:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -21
+4월 01, 2020 16:09:32.93 [1056:6036:0401/160932.932:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -21
+4월 01, 2020 16:09:35.17 [1056:6036:0401/160935.170:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+4월 01, 2020 18:45:41.34 [1056:6036:0401/184541.342:ERROR:socket_stream.cc(218)] Closing stream with result -2

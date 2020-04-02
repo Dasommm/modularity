@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mypage">
+
+	<select id="selectList" resultType="BoardDto" parameterType="PagingDto">
+		SELECT B.* 
+		FROM (SELECT A.*, ROWNUM AS RNUM
+		FROM (SELECT * FROM PAGEBOARD ORDER BY SEQ DESC) A) B
+		WHERE RNUM BETWEEN #{startseq} AND #{endseq} 
+	</select>
+	<select id="totalpage" resultType="int">
+		SELECT COUNT(*) AS TOTALPAGE FROM PAGEBOARD
+	</select>
+
+</mapper>
