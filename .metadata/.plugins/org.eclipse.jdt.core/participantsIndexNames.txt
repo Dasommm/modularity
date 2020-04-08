@@ -15,7 +15,11 @@ C:\workspace_module\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\355860
 \LoginAPI\src
 C:\workspace_module\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1006491056.index
 \summernote_module\src
+C:\workspace_module\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\479276032.index
+\Map\src
 C:\workspace_module\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\492707658.index
 \WebSocketChat\src
+C:\workspace_module\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2327037866.index
+\01_kakaopay\src
 C:\workspace_module\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3434745422.index
 \importPay_module\src
